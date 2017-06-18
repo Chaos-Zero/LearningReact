@@ -4,15 +4,19 @@ import './App.css';
 
 class App extends Component {
   render() {
+    var helloWorld = 'Welcome to React';
+    var username, surname
+    var people = [];
+    var homer = [];
+    var bart = [];
+    homer.push("Homer", "Simpson");
+    bart.push("Bart", "Simpson")
+    people.push(0, homer);
+    people.push(1, bart);
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h2>{helloWorld}</h2>
+        <p>{people[0]} {people[1]}</p>
       </div>
     );
   }
